@@ -389,7 +389,7 @@ class Defaults
         }
     }
 
-    public function channelHandler($slugs = []) 
+    public function channelHandler($slugs = [])
     {
         $username = ($slugs[0] == 'blog') ? $slugs[1]: $slugs[0];
         if (isset($username) && is_string($username)) {

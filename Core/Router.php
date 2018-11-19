@@ -81,7 +81,7 @@ class Router
         if (!Session::isLoggedIn()) { // Middleware will resolve this
             Session::withRouterRequest($request, $response);
         }
-                
+
         // XSRF Cookie - may be able to remove now with OAuth flow
         Security\XSRF::setCookie();
 
